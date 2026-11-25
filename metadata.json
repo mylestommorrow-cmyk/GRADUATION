@@ -1,0 +1,6 @@
+{
+  "name": "Ivy — Class of 2026 Graduation Celebration",
+  "description": "A pink-and-purple graduation celebration website for Ivy, featuring milestones, Still the One by Sauti Sol, a Then vs. Now memory wall, next chapter plans, and a guestbook.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

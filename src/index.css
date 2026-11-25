@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Fraunces", Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --color-lilac-surface: #F8F4FC;
+  --color-blush-surface: #FDF4F7;
+  --color-plum-ink: #241633;
+  --color-plum-muted: #5A466E;
+  --color-berry-rose: #DB2777;
+  --color-royal-violet: #7E22CE;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    color: var(--color-plum-ink);
+    background-color: transparent;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-serif);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto !important;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
